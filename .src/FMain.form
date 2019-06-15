@@ -1,0 +1,13 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,80,6)
+  Icon = Picture["Git-Icon-Black.png"]
+  { TextBox1 TextBox
+    MoveScaled(1,1,61,4)
+  }
+  { Button1 Button
+    MoveScaled(63,1,16,4)
+    Text = ("Clone")
+  }
+}

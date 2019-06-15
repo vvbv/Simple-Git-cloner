@@ -1,0 +1,30 @@
+' Gambas class file
+
+
+Public Sub Button1_Click()
+
+  Dim workspaceX As String = Args[1]
+  Dim repoURI As String = Trim(TextBox1.Text)
+  Dim sString As String[] 
+  Dim repoName As String
+  
+  If Len(workspaceX) == 0 Then
+    workspaceX = "GIT"
+  Endif
+
+  If Len(repoURI) > 0 Then
+
+    sString = Split(Trim(TextBox1.Text), "/")
+    repoName = Replace(sString[sString.Length - 1], ".git", "")
+    Exec ["git", "clone", TextBox1.Text, workspaceX & "/" & repoName] Wait
+    Quit
+  
+  Else
+    
+    Message.Error("Ingrese un repositorio")
+  
+  Endif
+  
+  
+
+End
