@@ -1,6 +1,6 @@
 # Simple Git cloner
 
-Aplicación simple para clonar repositorios públicos o privados (solo ssh)
+Aplicación simple para clonar repositorios públicos o privados (solo ssh).
 
 ![alt text](https://i.imgur.com/T5xRTHq.png "Simple-Git-Cloner")
 
