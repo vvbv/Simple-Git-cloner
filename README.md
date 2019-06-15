@@ -2,5 +2,5 @@
 
 Aplicación simple para clonar repositorios públicos o privados (Solo ssh)
 
-## Requiere
+## Requerimientos
 - Gambas 3.9.1 
